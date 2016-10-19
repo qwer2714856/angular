@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src='https://code.angularjs.org/1.2.0/angular.js'></script>
+</head>
+<body>
+<div ng-controller="ding"></div>
+<script>
+(function(){
+    var cc = angular.module('DLC', []);
+    cc.set = function(cc){
+    cc.controller("ding", function(){
+	alert('');
+	})
+    }
+})();
+
+var app = angular.module('myApp', ['DLC']);
+angular.module('DLC').set(app);
+</script>	
+</body>
+</html>
