@@ -1,11 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myApp">
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<script src='//cdn.bootcss.com/angular.js/2.0.0-beta.17/angular2.js'></script>
+	<script src='https://code.angularjs.org/1.2.0/angular.js'></script>
 </head>
 <body>
-	
+<div ng-controller="map">
+    <input type="text" ng-model="hi" value="sss" />
+<p ng-bind="hi"></p>
+</div>
+
+
+<div ng-controller="clock">
+    {{t.clock}}
+</div>
+<script>
+var app = angular.module('myApp', []);
+app.controller('map', function($scope){
+console.log($scope.hi);
+});
+
+
+app.controller('clock', function($scope, $timeout){
+    $scope.t = {
+        clock : new Date()
+    }
+  
+   function up(){
+        $scope.t.clock = new Date();
+        $scope.$digest();
+   }
+    
+   
+
+   setInterval(up, 100);
+
+});
+
+</script>	
 </body>
 </html>
