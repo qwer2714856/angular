@@ -13,4 +13,9 @@
     $parse(newValue)(scope) 返回的还是newvalue
     说白了就是
     $parse("字符串")(放到哪个作用域中去) 解析这个表达式在作用域上的值
+    $parse
+    http://www.thinksaas.cn/topics/0/401/401879.html
+    $interpolate
+    http://www.thinksaas.cn/topics/0/401/401878.html
+    都有切换作用域的作用。
     
