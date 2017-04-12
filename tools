@@ -1,2 +1,6 @@
 前端开发工具的介绍 来自慕斯网
-
+1.chrome Angular Batarang
+2.npm 包管理工具 npm install http-server -g 这是安装一个普通的http server 通过http-server 启动
+3.bower 依赖管理  bower.io 通过bower.json 来运行的
+4.单元测试用力神器 karma配合jasmine  jasmine.gitbub.io (编写分组 用力 期望 匹配) 用力编写完需要 启动karma karma.config.js 配置 karma start 启动
+5.angular 专门定制的一款 protractor npm run protractor 把 protractor运行起来 test 目录下e2e 集成测试 unit单元测试
