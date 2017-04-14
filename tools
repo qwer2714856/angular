@@ -4,3 +4,6 @@
 3.bower 依赖管理  bower.io 通过bower.json 来运行的
 4.单元测试用力神器 karma配合jasmine  jasmine.gitbub.io (编写分组 用力 期望 匹配) 用力编写完需要 启动karma karma.config.js 配置 karma start 启动
 5.angular 专门定制的一款 protractor npm run protractor 把 protractor运行起来 test 目录下e2e 集成测试 unit单元测试
+ui 库 https://angular-ui.github.io/
+指令API http://docs.ngnice.com/api/ng/directive/form
+MINIUI http://miniui.com/
